@@ -1,0 +1,37 @@
+run = "npm run preview"
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+deploymentTarget = "static"
+build = ["npm", "run", "build"]
+publicDir = "dist"
+
+[[ports]]
+localPort = 4173
+externalPort = 80
+
+[[ports]]
+localPort = 5173
+externalPort = 5173
+
+[[ports]]
+localPort = 5174
+externalPort = 3000
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "dev"
+
+[[workflows.workflow]]
+name = "dev"
+mode = "sequential"
+author = 52327577
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev -- --host 0.0.0.0"
