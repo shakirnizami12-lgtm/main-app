@@ -1,0 +1,23 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #0f2027;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottom-bar a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bottom-bar a.active {
+  color: #00ff9c;
+  font-weight: bold;
+}
