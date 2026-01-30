@@ -1,0 +1,79 @@
+.lottery-page {
+  padding: 16px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.page-subtitle {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.lottery-stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #f8f9fb;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.ticket-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.ticket-price {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.buy-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0ea5e9;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buy-btn:active {
+  transform: scale(0.98);
+}
+
+.result-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.result-date {
+  font-size: 12px;
+  color: #555;
+}

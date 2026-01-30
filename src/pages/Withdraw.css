@@ -1,0 +1,81 @@
+.withdraw-page {
+  padding: 16px;
+}
+
+/* BALANCE */
+.balance-card {
+  background: #f4f7ff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.balance-coin {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.balance-text {
+  color: #666;
+  margin-top: 4px;
+}
+
+/* TABS */
+.withdraw-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.withdraw-tabs button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  font-size: 14px;
+}
+
+.withdraw-tabs .active {
+  background: #2bb0ff;
+  color: white;
+  border: none;
+}
+
+/* FORM */
+.withdraw-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.withdraw-form select,
+.withdraw-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2bb0ff;
+  color: white;
+  font-size: 16px;
+}
+
+/* EMPTY */
+.empty-state {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+.empty-state img {
+  width: 120px;
+  margin-bottom: 12px;
+}

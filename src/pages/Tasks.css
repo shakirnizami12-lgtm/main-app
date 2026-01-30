@@ -1,0 +1,43 @@
+.task-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover (web) */
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* click / tap (mobile + web) */
+.task-card:active {
+  transform: scale(0.97);
+}
+
+/* ripple effect */
+.task-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.08) 10%,
+    transparent 11%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.task-card:active::after {
+  opacity: 1;
+}
